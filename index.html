@@ -10,7 +10,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /*align-items: center;*/
         height: 100vh;
         width: 100%;
         max-width: 50%;
@@ -34,6 +33,12 @@
         outline: none;
       }
 
+      .form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
       .form label {
         margin-left: 0;
         padding: 0;
@@ -42,11 +47,11 @@
       .form input,
       button {
         width: 100%;
-        max-width: 200px;
+        max-width: 320px;
       }
 
       button {
-        margin-left: 0;
+        margin-left: 1rem;
       }
 
       p.lastResult {
@@ -56,6 +61,15 @@
       @media (max-width: 576px) {
         body {
             max-width: 90%;
+        } 
+
+        .container {
+            margin: 1rem;
+        }   
+
+    .form input {
+        margin: 0.5rem;
+        margin-left: 0;
         }
       }
 
@@ -192,6 +206,9 @@
         // Создает новое случайное число, чтобы вы не угадывали одно и тоже!
         randomNumber = Math.floor(Math.random() * 100) + 1;
     }
+    </script>
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
 </body>
 
